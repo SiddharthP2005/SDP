@@ -1,0 +1,13 @@
+numpy
+pandas
+matplotlib
+joblib
+scikit-learn
+lightgbm
+groq
+kaggle
+sentence-transformers
+faiss-cpu
+rank-bm25
+gradio
+pyarrow
