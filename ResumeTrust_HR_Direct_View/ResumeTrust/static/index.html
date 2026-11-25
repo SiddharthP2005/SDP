@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ResumeTrust – Secure Placement Platform</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- LOGIN SCREEN -->
+    <div id="login-screen" class="screen">
+      <div class="login-card">
+        <div class="logo">
+          <span class="logo-icon">🔒</span>
+          <h1>ResumeTrust</h1>
+        </div>
+        <p class="tagline">Secure Resume Verification & Placement Platform</p>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="login-email" placeholder="you@college.edu" />
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" id="login-password" placeholder="••••••••" />
+        </div>
+        <button class="btn btn-primary" onclick="doLogin()">Login</button>
+
+        <div class="demo-creds">
+          <p><strong>Demo Credentials</strong></p>
+          <p>Placement: <code>placement@college.edu</code> / <code>Placement@123</code></p>
+          <p>HR: <code>hr@techcorp.com</code> / <code>HR@Tech123</code></p>
+          <p>Student: <code>arjun.sharma@college.edu</code> / <code>Student@123</code></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN APP -->
+    <div id="main-screen" class="screen hidden">
+      <header>
+        <div class="header-left">
+          <span class="logo-icon">🔒</span>
+          <span class="brand">ResumeTrust</span>
+        </div>
+        <div class="header-right">
+          <span id="user-badge" class="badge"></span>
+          <button class="btn btn-sm" onclick="logout()">Logout</button>
+        </div>
+      </header>
+
+      <nav id="nav-tabs"></nav>
+
+      <main id="content">
+        <!-- Dynamic content injected here -->
+      </main>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
